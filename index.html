@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evonie Braganza Beraña - Resume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Side Navigation */
+        .side-nav {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            transform: translateX(-220px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .side-nav:hover {
+            transform: translateX(0);
+        }
+
+        .side-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .side-nav ul li {
+            margin: 20px 0;
+        }
+
+        .side-nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Content Area */
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            overflow-y: auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .ai-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .ai-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .ai-section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .ai-section button {
+            background-color: #fff;
+            color: #007BFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .ai-section button:hover {
+            background-color: #f4f4f4;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+
+            .main-content {
+                flex-direction: column;
+            }
+
+            .side-nav {
+                width: 100%;
+                transform: translateX(0);
+                padding: 10px;
+                text-align: center;
+            }
+
+            .side-nav ul li {
+                margin: 10px 0;
+            }
+
+            .side-nav ul li a {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .ai-section h2 {
+                font-size: 1.5em;
+            }
+
+            .ai-section p {
+                font-size: 1em;
+            }
+
+            .ai-section button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1em;
+            }
+
+            .side-nav {
+                padding: 5px;
+            }
+
+            .side-nav ul li a {
+                font-size: 0.9em;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .ai-section h2 {
+                font-size: 1.3em;
+            }
+
+            .ai-section p {
+                font-size: 0.9em;
+            }
+
+            .ai-section button {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Evonie Braganza Beraña - Resume
+        </header>
+        <div class="main-content">
+            <div class="side-nav" id="sideNav">
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('objective')">Objective</a></li>
+                    <li><a href="#" onclick="showSection('personalData')">Personal Data</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('computerSkills')">Computer Skills</a></li>
+                    <li><a href="#" onclick="showSection('workExperience')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('certification')">Certification</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="home" class="section active">
+                    <div class="ai-section">
+                        <h2>Experience Website Creation Like Never Before</h2>
+                        <p>Get a unique, business-ready website in no time with our powerful AI.</p>
+                        <button>Create with AI</button>
+                    </div>
+                </div>
+                <div id="objective" class="section">
+                    <h2>Objective</h2>
+                    <p>To enhance and develop my knowledge, skills, and abilities that would provide me an opportunity for professional development and career growth, thus meeting the high standard quality of the technology and the company as well as the society.</p>
+                </div>
+                <div id="personalData" class="section">
+                    <h2>Personal Data</h2>
+                    <p>Place of Birth: San Jose, Iriga City</p>
+                    <p>Birth Date: October 8, 2001</p>
+                    <p>Sex: Female</p>
+                    <p>Nationality: Filipino</p>
+                    <p>Civil Status: Single</p>
+                    <p>Religion: Roman Catholic</p>
+                    <p>Father's Name: Jovito V. Beraña (+)</p>
+                    <p>Mother's Name: Gloria B. Beraña (+)</p>
+                    <p>Language Spoken: English, Rinconada, Tagalog, Bicol</p>
+                    <p>Person to be contacted in case of emergency: Erickson Beraña - 09612904670</p>
+                </div>
+                <div id="skills" class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Doing work in a timely manner</li>
+                        <li>Responsible for all tasks assigned</li>
+                        <li>Teamwork and collaboration</li>
+                        <li>Hardworking</li>
+                    </ul>
+                </div>
+                <div id="computerSkills" class="section">
+                    <h2>Computer Skills</h2>
+                    <ul>
+                        <li>Copying, compiling, sorting of office files</li>
+                        <li>Data Encoding</li>
+                        <li>Microsoft Word, Microsoft Excel, Microsoft PowerPoint</li>
+                    </ul>
+                </div>
+                <div id="workExperience" class="section">
+                    <h2>Work Experience</h2>
+                    <ul>
+                        <li>Data Encoder - Provincial Government of Camarines Sur</li>
+                        <li>Philhealth Staff - Camarines Sur Provincial Medical Center</li>
+                        <li>Licensed Financial Wealth Planner (Y2023) - FWD Insurance</li>
+                        <li>On-call Medical Secretary</li>
+                        <li>Medical Mission Staff</li>
+                    </ul>
+                </div>
+                <div id="education" class="section">
+                    <h2>Educational Background</h2>
+                    <p><strong>Tertiary:</strong> Camarines Sur Polytechnic Colleges - 2020-2021</p>
+                    <p><strong>Senior High:</strong> University of Saint Anthony - 2019-2020</p>
+                    <p><strong>Secondary:</strong> University of Saint Anthony - 2018-2019</p>
+                    <p><strong>Primary:</strong> Iriga Central School - 2013-2014</p>
+                </div>
+                <div id="certification" class="section">
+                    <h2>Certification</h2>
+                    <p>I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
+                    <p><strong>Evonie Beraña</strong></p>
+                    <p>Applicant's Signature</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
